@@ -8,15 +8,21 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <nav className="w-full flex py-6 justify-between items-center navbar">
-      <img src={logo} alt="hoobank" className="w-[124px] h-[32px]" />
+    <nav className="w-full flex py-6 justify-between items-center navbar bg-primary">
+      {/* <img src={logo} alt="hoobank" className="w-[124px] h-[32px]" /> */}
+      <div className="flex">
 
+      <h1 className="flex-1 font-poppins font-semibold ss:text-[40px] text-[52px] text-white ss:leading-[100.8px] leading-[75px]">
+         Code</h1>
+         <h1 className="flex-1 font-poppins font-semibold ss:text-[40px] text-[52px] text-white ss:leading-[100.8px] leading-[75px]  text-gradient">
+         Dera <br className="sm:block hidden" />{" "}</h1>
+      </div>
       <ul className="list-none sm:flex hidden justify-end items-center flex-1">
         {navLinks.map((nav, index) => (
           <li
             key={nav.id}
             className={`font-poppins font-normal cursor-pointer text-[16px] ${
-              active === nav.title ? "text-white" : "text-dimWhite"
+              active === nav.title ? "text-gradient" : "text-dimWhite"
             } ${index === navLinks.length - 1 ? "mr-0" : "mr-10"}`}
             onClick={() => setActive(nav.title)}
           >
@@ -42,7 +48,7 @@ const Navbar = () => {
             {navLinks.map((nav, index) => (
               <li
                 key={nav.id}
-                className={`font-poppins font-medium cursor-pointer text-[16px] ${
+                className={`font-poppins font-medium cursor-pointer  text-[16px] ${
                   active === nav.title ? "text-white" : "text-dimWhite"
                 } ${index === navLinks.length - 1 ? "mb-0" : "mb-4"}`}
                 onClick={() => setActive(nav.title)}

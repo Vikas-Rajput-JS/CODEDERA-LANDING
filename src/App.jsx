@@ -4,8 +4,8 @@ import { Service } from "./constants";
 import FeedbackCard from "./components/FeedbackCard";
 
 const App = () => (
-  <div className="bg-primary w-full overflow-hidden">
-    <div className={`${styles.paddingX} ${styles.flexCenter}`}>
+  <div className="bg-primary w-[100%]  overflow-hidden scrollbar scrollbar-night-fade">
+    <div className={`${styles.paddingX} ${styles.flexCenter} bg-primary`}>
       <div className={`${styles.boxWidth}`}>
         <Navbar />
       </div>
@@ -25,11 +25,20 @@ const App = () => (
         <CardDeal />
         <Testimonials />
         <Clients />
-        <CTA />
-        
+        <section className={`${styles.flexCenter} flex-row flex-wrap sm:mb-20 mb-6`}>
+    
+      <div  className={`flex-1 flex justify-center items-center mt-5  `} >
+      
+        <p className="font-poppins font-normal xs:text-[35.45px] text-[25.45px] xs:leading-[26.58px] leading-[21.58px] text-gradient uppercase ml-3">
+        Our Servies
+        </p>
+      </div>
+    ))}
+  </section>
     <div className="flex flex-wrap sm:justify-start justify-center w-full feedback-container relative z-[1]">
       {Service.map((card) => <FeedbackCard key={card.id} {...card} />)}
     </div>
+        <CTA />
         <Footer />
       </div>
     </div>
