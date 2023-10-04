@@ -27,9 +27,9 @@ const App = () => (
         <Clients />
         <CTA />
         
-    <div className="flex flex-wrap sm:justify-start justify-center w-full feedback-container relative z-[1]">
+    {/* <div className="flex flex-wrap sm:justify-start justify-center w-full feedback-container relative z-[1]">
       {Service.map((card) => <FeedbackCard key={card.id} {...card} />)}
-    </div>
+    </div> */}
         <Footer />
       </div>
     </div>
