@@ -47,15 +47,15 @@ export const feedback = [
   {
     id: "feedback-1",
     content:
-      "Money is only a tool. It will take you wherever you wish, but it will not replace you as the driver.",
+      "We've been trying to put together a functional website since I began my practice in April of 2021. I am happy to say we finally hired the CodeDera team and they've worked closely with us throughout the process. ",
     name: "Herman Jensen",
     title: "Founder & Leader",
     img: people01,
   },
   {
     id: "feedback-2",
-    content:
-      "Money makes your life easier. If you're lucky to have it, you're lucky.",
+    content:  
+      "We are very happy with Flatworldsolutions.com; very serious and consistent in their work. Joseph and his team of programmers have always been there for us all the time.",
     name: "Steve Mark",
     title: "Founder & Leader",
     img: people02,
@@ -63,7 +63,7 @@ export const feedback = [
   {
     id: "feedback-3",
     content:
-      "It is usually people in the money business, finance, and international trade that are really rich.",
+      "We have been using CodeDera's service for the last four months for testing of our SaaS solution. They have been a professional and committed partner who have taken responsibility for the partnership.",
     name: "Kenn Gallagher",
     title: "Founder & Leader",
     img: people03,

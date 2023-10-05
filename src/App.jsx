@@ -35,7 +35,7 @@ const App = () => (
       </div>
     ))}
   </section>
-    <div className="flex flex-wrap sm:justify-start justify-center w-full feedback-container relative z-[1]">
+    <div className="  grid sm:grid-cols-2 md:grid-cols-3   justify-center w-full feedback-container relative z-[1]">
       {Service.map((card) => <FeedbackCard key={card.id} {...card} />)}
     </div>
         <CTA />
